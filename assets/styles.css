@@ -74,6 +74,7 @@ main {
   position: relative;
 }
 
+/* Error message */
 #error__name,
 #error__phone {
   color: red;
