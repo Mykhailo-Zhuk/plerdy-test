@@ -74,6 +74,12 @@ main {
   position: relative;
 }
 
+#error__name,
+#error__phone {
+  color: red;
+  font-size: 10px;
+}
+
 /* Popup form */
 #layout {
   position: fixed;
@@ -95,7 +101,7 @@ main {
   background-color: white;
   width: 90%;
   max-width: 300px;
-  max-height: 400px;
+  max-height: 420px;
   z-index: 9999;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -182,7 +188,7 @@ main {
   }
 }
 
-.close_form {
+.close__form {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -239,6 +245,10 @@ main {
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+
+    &.invalid {
+      border: 0.75px solid red;
+    }
 
     &:focus-visible {
       outline: none;

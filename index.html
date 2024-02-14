@@ -193,10 +193,11 @@
           <div class="form__content">
             <h3>How to do a Website Audit to Improve SEO & Conversions</h3>
             <p>You will get an SMS with a link to the webinar</p>
-            <form class="form_body">
+            <form class="form__body">
               <div class="form__inputGroup">
                 <label for="name" class="muted">Name</label>
-                <input type="text" id="name" name="Name" placeholder="Your Name" required />
+                <input type="text" id="name" name="Name" placeholder="Your Name" />
+                <p id="error__name"></p>
               </div>
               <div class="form__inputGroup">
                 <label for="phone" class="muted">Label</label>
@@ -206,13 +207,8 @@
                   </div>
                   <span class="dialing__code">+380</span>
                   <span class="arrowDown__icon">▼</span>
-                  <input
-                    type="text"
-                    id="phone"
-                    name="Phone number"
-                    pattern="[0-9]{2}[0-9]{3}[0-9]{4}"
-                    placeholder="XX XXX XXXX"
-                  />
+                  <input type="text" id="phone" name="Phone number" placeholder="XX XXX XXXX" />
+                  <p id="error__phone"></p>
                 </div>
               </div>
               <div class="form__btnGroup">
@@ -236,7 +232,7 @@
               />
               <p class="muted">Powered by Plerdy</p>
             </div>
-            <div class="close_form" id="close_form">
+            <div class="close__form" id="close__form">
               <img src="/assets/icons/close.svg" alt="close icon" width="15px" height="15px" />
             </div>
           </div>
